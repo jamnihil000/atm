@@ -73,9 +73,11 @@ def main_menu():
 
     elif choice == 4:
         return False
+
 # Consultar saldo del usuario
 def consultar_saldo():
     print(f"Your balance is ${cash}")
+
 # Extraer dinero
 def withdrawn():
     global cash
@@ -100,6 +102,7 @@ def withdrawn():
                 break
         except ValueError:
             print("Introduce un numero valido\n")
+
 # Depositar dinero
 def deposit():
     global cash
